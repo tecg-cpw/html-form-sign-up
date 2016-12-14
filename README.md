@@ -14,4 +14,4 @@
 
 Créez le fichier `index.html` avec les bonnes balises afin d'arriver au résultat suivant :
 
-![Résultat attendu](./preview.png)
+![Résultat attendu](./preview.jpg)
