@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**
+My Styles
+*/
+
+html {
+    background: rgba(0, 212, 255, 1) linear-gradient(20deg, rgba(12, 10, 46, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%) 100% 100% no-repeat;
+    min-height: 100vh;
+}
+
+body {
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: darkslateblue;
+}
+
+main {
+    max-width: 40em;
+    margin: 8rem auto 2rem;
+    background-color: #fff;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+
+header {
+    padding: 2rem 5%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+form {
+    padding: 2rem 5%;
+    border-top: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+}
+
+small {
+    display: block;
+    color: darkmagenta;
+    font-weight: 400;
+    font-size: .8em;
+    font-style: italic;
+}
+
+abbr {
+    color: darkmagenta;
+}
+
+input {
+    font-size: 1rem;
+}
+
+[type=text], [type=password], [type=email] {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    font-size: 1rem;
+    padding: 1em;
+    margin-top: 0.5em;
+    background-color: rgb(235, 235, 235);
+}
+
+[type=checkbox] {
+    padding: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.checkbox-parent {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+[type=checkbox]:hover, [type=checkbox]:focus {
+    border-color: rgb(0, 150, 200);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
+
+}
+
+button {
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1em;
+    background: linear-gradient(0deg, rgba(0, 180, 230, 1) 0%, rgba(20, 242, 255, 1) 100%);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
+    border: 1px solid rgb(0, 150, 200);
+}
+
+button:hover, button:hover {
+    cursor: pointer;
+    background: rgba(20, 242, 255, 1);
+    box-shadow: 0 0 2px 2px rgba(0, 180, 200, .8);
+    border: 1px solid rgb(0, 150, 200)
+}
