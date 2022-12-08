@@ -1,43 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Sign Up Form</title>
-        <meta name="author" content="tecg-cpw">
-        <!-- TODO : Add k & d -->
+        <title>Rejoignez-nous&nbsp;!</title>
+        <meta name="author"
+              content="tecg-cpw">
+        <meta name="description"
+              content="Rejoins notre communauté">
+        <meta name="keywords"
+              content="formulaire, enregistrement, compte">
+        <link rel="stylesheet"
+              href="./css/styles.css">
     </head>
     <body>
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Sign Up</legend>
-                <p>Want to sign up fill out this form!</p>
+        <main>
+            <header>
+                <h1>Crée ton compte&nbsp;!</h1>
+                <p>Les champs marqués par le symbole <abbr title="étoile">*</abbr> sont obligatoires.</p>
+            </header>
+            <form action="/signup"
+                  method="post">
 
                 <div class="form-elt">
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="Your first name" required>
+                    <label for="firstname">Prénom <abbr title="étoile">*</abbr>
+                    </label>
+                    <input type="text"
+                           id="firstname"
+                           name="firstname"
+                           placeholder="Jean-Pierre"
+                           required>
                 </div>
 
                 <div class="form-elt">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Your last name" required>
+                    <label for="lastname">Nom de famille <abbr title="étoile">*</abbr>
+                    </label>
+                    <input type="text"
+                           id="lastname"
+                           name="lastname"
+                           placeholder="Dardenne"
+                           required>
                 </div>
 
                 <div class="form-elt">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Your password" required>
+                    <label for="email">Email <abbr title="étoile">*</abbr>
+                    </label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="jean-pierre@dardenne.net"
+                           required>
                 </div>
-
                 <div class="form-elt">
-                    <input type="checkbox" name="terms-of-use" value="1">
-                    <label>
-                        I accept the terms of use
+                    <label for="password">Mot de passe <abbr title="étoile">*</abbr>
+                        <small>au moins 8 caractères, chiffres et lettres</small>
+                    </label>
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           required>
+                </div>
+                <div class="form-elt">
+                    <label for="password-confirm">Retape ton mot de passe une deuxième fois
+                        <abbr title="étoile">*</abbr>
+                        <small>pour être sûr que tu n’as pas fait de faute de frappe</small>
+                    </label>
+                    <input type="password"
+                           id="password-confirm"
+                           name="password-confirm"
+                           required>
+                </div>
+                <div class="form-elt checkbox-parent">
+                    <input type="checkbox"
+                           name="terms-of-use"
+                           id="terms-of-use"
+                           value="1"
+                           required>
+                    <label for="terms-of-use">J’accepte les conditions d’utilisation. <abbr title="étoile">*</abbr>
                     </label>
                 </div>
 
                 <div class="form-buttons">
-                    <button type="submit">Sign Up</button>
+                    <button type="submit">Je valide la création de mon compte&nbsp;!</button>
                 </div>
-            </fieldset>
-        </form>
+            </form>
+        </main>
     </body>
 </html>
